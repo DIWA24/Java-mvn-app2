@@ -3,14 +3,14 @@ pipeline {
 
     tools {
         // Install the Maven version configured as "M3" and add it to the path.
-        maven "slave_maven"
+        maven "MAVEN"
     }
 
     stages {
         stage('SCM Checkout') {
             steps {
                 echo 'Checkout Src from github repo'
-		git 'https://github.com/LoksaiETA/Java-mvn-app2.git'
+		git 'https://github.com/DIWA24/Java-mvn-app2.git'
             }
         }
         stage('Maven Build') {
